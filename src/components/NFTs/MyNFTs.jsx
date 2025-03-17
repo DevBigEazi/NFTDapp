@@ -85,13 +85,7 @@ const MyNFTs = () => {
                   </div>
                   <h2 className="font-bold">{metadata.name}</h2>
                   <p className="text-sm text-gray-600">Token ID: {tokenId}</p>
-                  <p className="text-sm text-gray-600">
-                    {truncateString(metadata.description, 100)}
-                  </p>
-                  <div className="flex gap-2 items-center text-sm">
-                    <Icon icon="ri:file-list-3-line" className="w-5 h-5" />
-                    <span>{metadata.attributes?.length || 0} Attributes</span>
-                  </div>
+                  
                 </div>
               );
             })}
