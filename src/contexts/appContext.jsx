@@ -4,7 +4,7 @@ import { getReadOnlyProvider } from "../utils";
 import NFT_ABI from "../ABI/nft.json";
 import { useAccount, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { toast } from "react-hot-toast";
-import { getProperImageUrl, createImageFallbackHandler, createPlaceholderMetadata } from "../utils/nft-image";
+import { getProperImageUrl, createPlaceholderMetadata } from "../utils/nft-image";
 
 const appContext = createContext();
 

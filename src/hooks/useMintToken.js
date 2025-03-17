@@ -18,6 +18,7 @@ const useMintToken = () => {
         if (nextTokenId >= maxSupply) return alert("No more tokens to mint");
 
         const signer = await getEthersSigner(wagmiConfig);
+
         const contract = new Contract(
             import.meta.env.VITE_NFT_CONTRACT_ADDRESS,
             NFT_ABI,
